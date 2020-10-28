@@ -1,0 +1,935 @@
+{
+  "Categories": [
+    "Confort",
+    "Repose-pieds",
+    "Roues Avant",
+    "Accoudoirs",
+    "Joystick",
+    "Accessoires électriques",
+    "Transport",
+    "Pratique"
+  ],
+  "Packs": {
+    "8WA": {
+      "Ref": "8WA",
+      "Name": "ERGO-08 L POSITION",
+      "PriceHT": 3843.6,
+      "TVA": 5.5,
+      "PriceTTC": "4055",
+      "LPP": 3487.95,
+      "Weight": "50",
+      "ItemsRef": [
+        "7M03",
+        "7M05"
+      ]
+    }
+  },
+  "Chairs": {
+    "8WC": {
+      "Ref": "8WC",
+      "Name": "ERGO-08 L Classic",
+      "PriceHT": 3306.11,
+      "TVA": 5.5,
+      "PriceTTC": 3487.95,
+      "LPP": 3487.95,
+      "Weight": "50",
+      "ItemsRef": [
+        "8WCDossier",
+        "8WCAccoudoirs"
+      ]
+    }
+  },
+  "Items": {
+    "7M03": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Category": "Confort",
+          "Ref": "7M03",
+          "Name": "Appuie-Tête",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Hauteur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4
+              ],
+              "delta": 10
+            }
+          },
+          "PriceHT": 246.45,
+          "TVA": 5.5,
+          "PriceTTC": 260,
+          "LPP": 0,
+          "Weight": 5,
+          "Exeptions": []
+        }
+      ]
+    },
+    "7T02": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7T02",
+          "Category": "Confort",
+          "Name": "Assise Réhaussée +3cm",
+          "Settings": {},
+          "PriceHT": 82.46,
+          "TVA": 5.5,
+          "PriceTTC": "87",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "NRT04",
+            "7T10L"
+          ]
+        }
+      ]
+    },
+    "NRT04": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "NRT04",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Hauteur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4
+              ],
+              "delta": 10
+            },
+            "Profondeur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4
+              ],
+              "delta": 10
+            }
+          },
+          "Category": "Confort",
+          "PriceHT": 161.14,
+          "TVA": 5.5,
+          "PriceTTC": "170",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "7T02",
+            "7T10L"
+          ],
+          "Name": "Assise Position 3 Réglages"
+        }
+      ]
+    },
+    "7T10L": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7T10L",
+          "Name": "Assise Modulaire Evolutive",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Hauteur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4
+              ],
+              "delta": 10
+            },
+            "Profondeur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4
+              ],
+              "delta": 10
+            }
+          },
+          "PriceHT": 794.76,
+          "TVA": 5.5,
+          "PriceTTC": 838.47,
+          "LPP": 838.47,
+          "Weight": "5",
+          "Exeptions": [
+            "NRT04",
+            "7T02"
+          ],
+          "Category": "Confort"
+        }
+      ]
+    },
+    "7T15": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7T15",
+          "Name": "Ceinture de Maintien Jambier",
+          "Settings": {},
+          "PriceHT": 61.61,
+          "TVA": 5.5,
+          "PriceTTC": "65",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Confort"
+        }
+      ]
+    },
+    "8M06": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "8M06",
+          "Category": "Repose-pieds",
+          "Name": "Repose-pieds Monobloc",
+          "Settings": {},
+          "PriceHT": 132.7,
+          "TVA": 5.5,
+          "PriceTTC": "140",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": []
+        }
+      ]
+    },
+    "7M07000": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M07000D",
+          "Category": "Repose-pieds",
+          "Name": "Repose Jambe Droit",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Longueur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            }
+          },
+          "PriceHT": 213.27,
+          "TVA": 5.5,
+          "PriceTTC": "225",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": []
+        },
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M07000G",
+          "Category": "Repose-pieds",
+          "Name": "Repose Jambe Gauche",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Longueur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            }
+          },
+          "PriceHT": 213.27,
+          "TVA": 5.5,
+          "PriceTTC": "225",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": []
+        }
+      ]
+    },
+    "7M09": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M09",
+          "Name": "Roue (UNITE) Avant Bandage Standard",
+          "Settings": {},
+          "PriceHT": 45.5,
+          "TVA": 5.5,
+          "PriceTTC": "48",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Roues Avant"
+        }
+      ]
+    },
+    "7M10": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M10",
+          "Name": "Roue (UNITE) Avant Bandage Slim",
+          "Settings": {},
+          "PriceHT": 45.5,
+          "TVA": 5.5,
+          "PriceTTC": "48",
+          "LPP": "0",
+          "Weight": "5",
+          "Category": "Roues Avant",
+          "Exeptions": []
+        }
+      ]
+    },
+    "8M04000": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Category": "Accoudoirs",
+          "Name": "Accoudoirs Position réglables (La paire)",
+          "PriceHT": 341.23,
+          "PriceTTC": "360",
+          "TVA": 5.5,
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "7M01G",
+            "7M22D",
+            "7M22G"
+          ],
+          "Settings": {
+            "Hauteur Droit": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Profondeur Droit": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "hauteur Gauche": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            },
+            "Profondeur Gauche": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            }
+          },
+          "Ref": "8M04000"
+        }
+      ]
+    },
+    "7M01G": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M01G",
+          "Name": "Accoudoirs Gel (x2)",
+          "Category": "Accoudoirs",
+          "Settings": {},
+          "PriceHT": 227.49,
+          "TVA": 5.5,
+          "PriceTTC": "240",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "8M04000",
+            "7M22D",
+            "7M22G"
+          ]
+        }
+      ]
+    },
+    "7M22": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M22D",
+          "Category": "Accoudoirs",
+          "Name": "Accoudoir Gouttière (x1) Droit",
+          "Settings": {},
+          "PriceHT": 113.17,
+          "TVA": 5.5,
+          "PriceTTC": 119.39,
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "7M01G",
+            "8M04000",
+            "7M05D"
+          ]
+        },
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M22G",
+          "Category": "Accoudoirs",
+          "Name": "Accoudoir Gouttière (x1) Gauche",
+          "Settings": {},
+          "PriceHT": 113.17,
+          "TVA": 5.5,
+          "PriceTTC": 119.39,
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "7M01G",
+            "8M04000",
+            "7M05G"
+          ]
+        }
+      ]
+    },
+    "7M05": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M05G",
+          "Name": "Pantographe Joystick Gauche",
+          "Category": "Joystick",
+          "Settings": {},
+          "PriceHT": 161.14,
+          "TVA": 5.5,
+          "PriceTTC": "170",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "8WCJoystick",
+            "7M22G",
+            "7M05D"
+          ]
+        },
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M05D",
+          "Name": "Pantographe Joystick Droit",
+          "Category": "Joystick",
+          "Settings": {},
+          "PriceHT": 161.14,
+          "TVA": 5.5,
+          "PriceTTC": "170",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "8WCJoystick",
+            "7M22D",
+            "7M05G"
+          ]
+        }
+      ]
+    },
+    "7M24": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M24",
+          "Name": "Boule De Pilotage",
+          "Settings": {},
+          "PriceHT": 15.17,
+          "TVA": 5.5,
+          "PriceTTC": "16",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Joystick"
+        }
+      ]
+    },
+    "7E01": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7E01",
+          "Name": "Adaptateur chargeur batterie",
+          "Settings": {},
+          "PriceHT": 79.62,
+          "TVA": 5.5,
+          "PriceTTC": "84",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Accessoires électriques"
+        }
+      ]
+    },
+    "7E10": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7E10",
+          "Name": "Commande tierce personne",
+          "Settings": {},
+          "PriceHT": 677.02,
+          "TVA": 5.5,
+          "PriceTTC": 714.26,
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Accessoires électriques"
+        }
+      ]
+    },
+    "7M22Temp": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M22Temp",
+          "Name": "ErgoLift",
+          "Settings": {},
+          "PriceHT": 744.08,
+          "TVA": 5.5,
+          "PriceTTC": "785",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Accessoires électriques"
+        }
+      ]
+    },
+    "7E14": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7E14",
+          "Name": "Pack ErgoLift",
+          "Settings": {},
+          "PriceHT": 1075.82,
+          "TVA": 5.5,
+          "PriceTTC": "1135",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Accessoires électriques"
+        }
+      ]
+    },
+    "NRM14": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "NRM14",
+          "Name": "Pack Porte Bagages + Sac à provisions",
+          "Settings": {},
+          "PriceHT": 274.88,
+          "TVA": 5.5,
+          "PriceTTC": "290",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Transport"
+        }
+      ]
+    },
+    "ACM002": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACM002",
+          "Name": "Panier",
+          "Settings": {},
+          "PriceHT": 45.5,
+          "TVA": 5.5,
+          "PriceTTC": "48",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Transport"
+        }
+      ]
+    },
+    "7T05": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7T05",
+          "Name": "Sac de Portage",
+          "Settings": {},
+          "PriceHT": 187.68,
+          "TVA": 5.5,
+          "PriceTTC": "198",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Transport"
+        }
+      ]
+    },
+    "9T13": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "9T13",
+          "Name": "Drap de chargement ERGO",
+          "Settings": {},
+          "PriceHT": 79.62,
+          "TVA": 5.5,
+          "PriceTTC": "84",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Transport"
+        }
+      ]
+    },
+    "ACT003": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACT003",
+          "Name": "Sacoche Accoudoirs",
+          "Settings": {},
+          "PriceHT": 84.36,
+          "TVA": 5.5,
+          "PriceTTC": "89",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Transport"
+        }
+      ]
+    },
+    "7P01": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7P01",
+          "Name": "Porte Cannes",
+          "Settings": {},
+          "PriceHT": 26.54,
+          "TVA": 5.5,
+          "PriceTTC": "28",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "ACE003": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACE003",
+          "Name": "Gonfleur Electrique Portatif",
+          "Settings": {},
+          "PriceHT": 84.36,
+          "TVA": 5.5,
+          "PriceTTC": "89",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "7M23": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M23",
+          "Name": "Bombe Anti-Crevaison",
+          "Settings": {},
+          "PriceHT": 34.12,
+          "TVA": 5.5,
+          "PriceTTC": "36",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "ACE001": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACE001",
+          "Name": "Lampe LED + Fixation",
+          "Settings": {},
+          "PriceHT": 63.51,
+          "TVA": 5.5,
+          "PriceTTC": "67",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "ACE002": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACE002",
+          "Name": "Lampe LED + Fixation",
+          "Settings": {},
+          "PriceHT": 63.51,
+          "TVA": 5.5,
+          "PriceTTC": "67",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "ACM001": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACM001",
+          "Name": "Porte-Tasse",
+          "Settings": {},
+          "PriceHT": 23.7,
+          "TVA": 5.5,
+          "PriceTTC": "25",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "AC00300": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "AC00300",
+          "Name": "Chargeur USB",
+          "Settings": {},
+          "PriceHT": 59.72,
+          "TVA": 5.5,
+          "PriceTTC": "63",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "ACM003": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "ACM003",
+          "Name": "Reflecteur arrière",
+          "Settings": {},
+          "PriceHT": 15.17,
+          "TVA": 5.5,
+          "PriceTTC": "16",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "7M07P": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7M07P",
+          "Name": "Plateau de Lecture",
+          "Settings": {},
+          "PriceHT": 119.43,
+          "TVA": 5.5,
+          "PriceTTC": "126",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    },
+    "7A01": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "7A01",
+          "Name": "Support Smartphone",
+          "Settings": {},
+          "PriceHT": 80.57,
+          "TVA": 5.5,
+          "PriceTTC": 85,
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [],
+          "Category": "Pratique"
+        }
+      ]
+    }
+  },
+  "ItemsSeries": {
+    "8WCJoystick": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "8WCJoystick",
+          "Name": "Pantographe Joystick",
+          "Category": "Joystick",
+          "Settings": {
+            "Droite/Gauche": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                1
+              ]
+            }
+          },
+          "PriceHT": 161.14,
+          "TVA": 5.5,
+          "PriceTTC": "170",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "8WCJoystickD",
+            "7M22G",
+            "7M05D",
+            "7M05G"
+          ]
+        }
+      ]
+    },
+    "8WCReposePieds": {
+      "List": [
+        {
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Ref": "8WCJoystick",
+          "Name": "Repose-pieds",
+          "Category": "Repose-pieds",
+          "Settings": {
+            "Profondeur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                4
+              ]
+            },
+            "Hauteur": {
+              "Type": "Cran",
+              "Values": [
+                0,
+                4,
+                3
+              ]
+            }
+          },
+          "PriceHT": 161.14,
+          "TVA": 5.5,
+          "PriceTTC": "170",
+          "LPP": "0",
+          "Weight": "5",
+          "Exeptions": [
+            "7M07000D",
+            "7M07000G",
+            "8M06"
+          ]
+        }
+      ]
+    },
+    "8WCDossier": {
+      "List": [
+        {
+          "Category": "Confort",
+          "Ref": "8WCSiege",
+          "Name": "Dossier",
+          "Settings": {
+            "Inclinaison": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                25
+              ]
+            },
+            "Hauteur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                4
+              ]
+            }
+          },
+          "ChairsReferences8": [
+            "8WC"
+          ]
+        }
+      ]
+    },
+    "8WCAccoudoirs": {
+      "List": [
+        {
+          "Category": "Confort",
+          "Ref": "8WCAccoudoirsD",
+          "Name": "Accoudoir Droit",
+          "Settings": {
+            "Largeur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            }
+          },
+          "ChairsReferences8": [
+            "8WC"
+          ]
+        },
+        {
+          "Category": "Confort",
+          "Ref": "8WCAccoudoirsG",
+          "Name": "Accoudoir Gauche",
+          "Settings": {
+            "Largeur": {
+              "Type": "Slider",
+              "Values": [
+                0,
+                40
+              ]
+            }
+          },
+          "ChairsReferences8": [
+            "8WC"
+          ]
+        }
+      ]
+    }
+  }
+}

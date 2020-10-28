@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 67c737b52867b3d488663fc79b1626a0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 60
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cuprum
+  - arial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9ac385f1cb4ef754fa8e60eaecba8b53, type: 3}
+  - {fileID: 12800000, guid: 94268cbb4db5ffa46bc21bddf96c524f, type: 3}
+  - {fileID: 12800000, guid: 4644e88cf0ded6d41a34b03e1580c110, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
