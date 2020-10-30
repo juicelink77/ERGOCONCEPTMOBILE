@@ -46,12 +46,12 @@ public class GenerateFBOCamera : MonoBehaviour
 
     public void SetWindowedScreen()
     {
-#if WEB_GL || UNITY_EDITOR
+#if WEB_GL 
         Width = 650;
         Heigth = 600;
 #else
-        Width = 650;
-        Heigth = 600;
+        Width = 1000;
+        Heigth = 700;
 #endif
         CreatRenderTexture();
     }
