@@ -5,25 +5,54 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class GenerateFBOCamera : MonoBehaviour
 {
-    public int Width = 500;
-    public int Heigth = 500;
+    private int Width;
+    private int Heigth;
     private static RenderTexture targetTexture = null;
-    //private Vector2 size = Vector2.one;
     public RenderTexture TargetTexture { get { return targetTexture; } }
 
     private void Awake()
     {
-            if (targetTexture == null)
-            {
-            targetTexture = new RenderTexture(Width, Heigth, 0, RenderTextureFormat.ARGB32);
-            targetTexture.depth = 24;
-/*
-#if UNITY_EDITOR
-            targetTexture = new RenderTexture(1080, 1920, 0, RenderTextureFormat.ARGB32);
+        SetWindowedScreen();
+    }
+
+    private void CreatRenderTexture()
+    {
+        targetTexture = new RenderTexture(Width, Heigth, 0, RenderTextureFormat.ARGB32);
+        targetTexture.depth = 24;
+        GetComponent<Camera>().targetTexture = targetTexture;
+    }
+
+    public int GetWidth()
+    {
+        return Width;
+    }
+
+    public int GetHeight()
+    {
+        return Heigth;
+    }
+
+    public void SetFullScreen()
+    {
+#if WEB_GL || UNITY_EDITOR
+        Width = 1920;
+        Heigth = 960;
 #else
-                targetTexture = new RenderTexture(Screen.width, Screen.height, 0, RenderTextureFormat.ARGB32);
-#endif*/
-            }
-            GetComponent<Camera>().targetTexture = targetTexture;
-        }
+        Width = 1920;
+        Heigth = 960;
+#endif
+        CreatRenderTexture();
+    }
+
+    public void SetWindowedScreen()
+    {
+#if WEB_GL || UNITY_EDITOR
+        Width = 650;
+        Heigth = 600;
+#else
+        Width = 650;
+        Heigth = 600;
+#endif
+        CreatRenderTexture();
+    }
 }

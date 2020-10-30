@@ -12,10 +12,19 @@ public class GetCameraTexture : MonoBehaviour
 
     private void Start()
     {
+        ReGenerateFBOCamera(Image);
+    }
+
+    public void ReGenerateFBOCamera(RawImage img)
+    {
         GenerateFBOCamera GenerateFBOCamera = Camera3D.GetComponent<GenerateFBOCamera>();
-        Image.rectTransform.sizeDelta = new Vector2(GenerateFBOCamera.Width, GenerateFBOCamera.Heigth);
-        Image.GetComponent<BoxCollider2D>().size = Image.GetComponent<RectTransform>().sizeDelta;
-        Image.GetComponent<BoxCollider2D>().offset = new Vector2(Image.GetComponent<RectTransform>().sizeDelta.x / 2, -Image.GetComponent<RectTransform>().sizeDelta.y / 2);
+        img.rectTransform.sizeDelta = new Vector2(GenerateFBOCamera.GetWidth(), GenerateFBOCamera.GetHeight());
+        BoxCollider2D boxCollider = img.GetComponent<BoxCollider2D>();
+        if (boxCollider != null)
+        {
+            img.GetComponent<BoxCollider2D>().size = img.GetComponent<RectTransform>().sizeDelta;
+            img.GetComponent<BoxCollider2D>().offset = new Vector2(img.GetComponent<RectTransform>().sizeDelta.x / 2, -img.GetComponent<RectTransform>().sizeDelta.y / 2);
+        }
     }
 
     private void Update()

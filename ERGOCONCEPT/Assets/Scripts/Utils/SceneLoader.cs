@@ -3,14 +3,18 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class SceneLoader : MonoBehaviour
 {
     public Canvas Canvas;
     public Image image;
     public CanvasGroup CanvasGroup;
+    public bool BypassTransition = false;
     private string sceneNameToGo;
     private float fadeTimer = 1f;
+
+    public UnityEvent OnSceneInit;
 
     private IEnumerator FadeOut()
     {
@@ -33,12 +37,20 @@ public class SceneLoader : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FadeOut());
+        OnSceneInit.Invoke();
     }
 
     public void GotoScene(string sceneName)
     {
         sceneNameToGo = sceneName;
-        StartCoroutine(LaunchTransition());
+        if (BypassTransition)
+        {
+            OnFadeInFinished();
+        }
+        else
+        {
+            StartCoroutine(LaunchTransition());
+        }
     }
 
     private IEnumerator LaunchTransition()
