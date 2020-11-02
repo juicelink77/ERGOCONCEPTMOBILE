@@ -16,6 +16,7 @@ public class AccessorySetting : MonoBehaviour
     {
         parameterName = settingName;
         SettingsManager.SettingTypes settingType = (SettingsManager.SettingTypes)System.Enum.Parse(typeof(SettingsManager.SettingTypes), settingInfo["Type"].ToString());
+       
         SliderGroup.SetActive(false);
         ToogleGroupe.SetActive(false);
         CranGroupe.SetActive(false);
@@ -43,8 +44,13 @@ public class AccessorySetting : MonoBehaviour
             {
                 multiplicateur = int.Parse(values[2].ToString());
             }
+            string axe = null;
+            if (settingInfo.ContainsKey("axe"))
+            {
+                axe = settingInfo["axe"].ToString();
+            }
             
-            Slider.onValueChanged.AddListener(delegate { OnChangeValue(Slider, multiplicateur); });
+            Slider.onValueChanged.AddListener(delegate { OnChangeValue(Slider, multiplicateur, axe); });
         }
         else if (settingType == SettingsManager.SettingTypes.Toggle)
         {
@@ -55,8 +61,8 @@ public class AccessorySetting : MonoBehaviour
         }
     }
 
-    public void OnChangeValue(Slider s, int multiplicateur)
+    public void OnChangeValue(Slider s, int multiplicateur, string axe)
     {
-        MyParent.ChangeValue(s, parameterName, multiplicateur);
+        MyParent.ChangeValue(s, parameterName, multiplicateur, axe);
     }
 }

@@ -29,8 +29,8 @@ public class AccessorySeries : Accessory
         GetComponent<RectTransform>().sizeDelta = new Vector2(currentSize.x, currentSize.y + rectSize);
     }
 
-    public override void ChangeValue(Slider slider, string parameterTypes, int multiplicateur)
+    public override void ChangeValue(Slider slider, string parameterTypes, int multiplicateur, string axe)
     {
-        base.ChangeValue(slider, parameterTypes, multiplicateur);
+        base.ChangeValue(slider, parameterTypes, multiplicateur, axe);
     }
 }

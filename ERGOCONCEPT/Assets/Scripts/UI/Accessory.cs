@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,6 @@ public class Accessory : MonoBehaviour
     public string Reference;
     public bool IsOn;
     public GameObject ObjectModel3D;
-
 
     private void Start()
     {
@@ -21,10 +21,9 @@ public class Accessory : MonoBehaviour
         if (ObjectModel3D != null)
             ObjectModel3D.SetActive(IsOn);
     }
-
     public virtual void Init(List<GameObject> settingList, Hashtable accessoryInfo)
     {
-
+       
     }
 
     public virtual void SetItem()
@@ -42,11 +41,7 @@ public class Accessory : MonoBehaviour
     {
         if (Toggle.isOn)
         {
-            Toggle.isOn = false;
-            /*if (isException)
-            {
-                Debug.Log("Exception item ref : " + Reference + " " + Label.text);
-            }*/
+            Toggle.isOn = false; 
         }
     }
 
@@ -57,25 +52,55 @@ public class Accessory : MonoBehaviour
             Toggle.isOn = true;
         }
     }
-
-    public virtual void ChangeValue(Slider slider, string parameterTypes, int multiplicateur)
+    public virtual void ChangeValue(Slider slider, string parameterTypes, int multiplicateur, string axe)
     {
-        GameObject test = GameObject.Find(Reference);
-        Debug.Log(parameterTypes);
-        if (test != null)
-        { 
-            if (parameterTypes == "Inclinaison")
-            {
-                test.transform.localEulerAngles = new Vector3(test.transform.localEulerAngles.x, (float)(slider.value* multiplicateur), test.transform.localEulerAngles.z);
-            }
-            else if(parameterTypes == "Hauteur")
-            {
-                Transform H = GameObject.Find("H_" + Reference).transform;
-                H.localPosition = new Vector3(H.localPosition.x, (float)(slider.value * multiplicateur), H.localPosition.z);
-            }
-            else
-            {
-            } 
+        float v = (float)(slider.value * multiplicateur);
+        string vector = axe;
+        GameObject ob = GameObject.Find(Reference+"_"+ parameterTypes);
+        switch (parameterTypes)
+        {
+            case "Inclinaison":
+                switch (vector)
+                {
+                    case "x":
+                        ob.transform.localEulerAngles = new Vector3(v, ob.transform.localEulerAngles.y, ob.transform.localEulerAngles.z);
+                        break;
+                    case "y":
+                        ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, v, ob.transform.localEulerAngles.z);
+                        break;
+                    case "z":
+                        ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, ob.transform.localEulerAngles.y, v);
+                        break;
+                }
+                break;
+            case "Hauteur":
+                switch (vector)
+                {
+                    case "x":
+                        ob.transform.localPosition = new Vector3(v, ob.transform.localPosition.y, ob.transform.localPosition.z);
+                        break;
+                    case "y":
+                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, v, ob.transform.localPosition.z);
+                        break;
+                    case "z":
+                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, v);
+                        break;
+                }
+                break;
+            case "Profondeur":
+                switch (vector)
+                {
+                    case "x":
+                        ob.transform.localPosition = new Vector3(v, ob.transform.localPosition.y, ob.transform.localPosition.z);
+                        break;
+                    case "y":
+                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, v, ob.transform.localPosition.z);
+                        break;
+                    case "z":
+                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, v);
+                        break;
+                }
+                break;
         }
     }
 }
