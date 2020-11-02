@@ -52,7 +52,7 @@ public class Accessory : MonoBehaviour
             Toggle.isOn = true;
         }
     }
-    public virtual void ChangeValue(Slider slider, string parameterTypes, int multiplicateur, string axe)
+    public virtual void ChangeValue(Slider slider, string parameterTypes, float multiplicateur, string axe)
     {
         float v = (float)(slider.value * multiplicateur);
         string vector = axe;

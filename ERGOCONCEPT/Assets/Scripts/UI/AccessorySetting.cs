@@ -39,10 +39,10 @@ public class AccessorySetting : MonoBehaviour
             }
             Slider.minValue = int.Parse(values[0].ToString());
             Slider.maxValue = int.Parse(values[1].ToString());
-            int multiplicateur = 1;
+            float multiplicateur = 1f;
             if(values.Count > 2)
             {
-                multiplicateur = int.Parse(values[2].ToString());
+                multiplicateur = float.Parse(values[2].ToString());
             }
             string axe = null;
             if (settingInfo.ContainsKey("axe"))
@@ -61,7 +61,7 @@ public class AccessorySetting : MonoBehaviour
         }
     }
 
-    public void OnChangeValue(Slider s, int multiplicateur, string axe)
+    public void OnChangeValue(Slider s, float multiplicateur, string axe)
     {
         MyParent.ChangeValue(s, parameterName, multiplicateur, axe);
     }

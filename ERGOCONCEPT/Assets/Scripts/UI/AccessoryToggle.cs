@@ -163,7 +163,7 @@ public class AccessoryToggle : Accessory
         settingsManager.ChangeWeight(Toggle.isOn ? Weight : -Weight);
     }
 
-    public override void ChangeValue(Slider slider,string parameterTypes, int multiplicateur, string axe)
+    public override void ChangeValue(Slider slider,string parameterTypes, float multiplicateur, string axe)
     {
         base.ChangeValue(slider, parameterTypes, multiplicateur, axe);
     }

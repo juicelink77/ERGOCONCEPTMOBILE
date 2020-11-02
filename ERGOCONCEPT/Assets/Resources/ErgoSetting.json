@@ -845,11 +845,12 @@
               ]
             },
             "Hauteur": {
-              "Type": "Slider",
+              "Type": "Cran",
               "axe" : "z",
               "Values": [
                 0,
-                2
+                4,
+                0.45
               ]
             }
           },
