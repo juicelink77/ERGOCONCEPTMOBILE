@@ -46,13 +46,17 @@ public class GenerateFBOCamera : MonoBehaviour
 
     public void SetWindowedScreen()
     {
-#if WEB_GL 
-        Width = 650;
-        Heigth = 600;
-#else
-        Width = 1000;
-        Heigth = 700;
-#endif
+        if (Screen.width < Screen.height)
+        {
+            Debug.Log("mes testiboules");
+            Width = 1000;
+            Heigth = 700;
+        }
+        else
+        {
+            Width = 650;
+            Heigth = 600;
+        }
         CreatRenderTexture();
     }
 }
