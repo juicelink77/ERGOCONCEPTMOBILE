@@ -806,11 +806,22 @@
           "Name": "Pantographe Joystick",
           "Category": "Joystick",
           "Settings": {
-            "Droite/Gauche": {
+            "Emplacement": {
               "Type": "Cran",
+              "axe":"y",
               "Values": [
                 0,
-                1
+                1,
+                -0.496
+              ]
+            },
+            "Profondeur": {
+              "Type": "Cran",
+              "axe":"z",
+              "Values": [
+                0,
+                3,
+                -0.0156
               ]
             }
           },
@@ -841,7 +852,7 @@
               "axe" : "z",
               "Values": [
                 0,
-                2
+                0.13
               ]
             },
             "Hauteur": {
@@ -849,8 +860,8 @@
               "axe" : "z",
               "Values": [
                 0,
-                4,
-                0.45
+                3,
+                -0.015
               ]
             }
           },
@@ -876,7 +887,7 @@
           "Settings": {
             "Inclinaison": {
               "Type": "Slider",
-              "axe" : "y",
+              "axe" : "x",
               "Values": [
                 0,
                 25
@@ -887,7 +898,7 @@
               "axe" : "y",
               "Values": [
                 0,
-                4
+                0.04
               ]
             }
           },

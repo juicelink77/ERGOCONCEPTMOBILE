@@ -24,7 +24,7 @@ public class SwitchMode : MonoBehaviour
                 ARcontent.SetActive(true);
                 chair.transform.parent = chairContainerARcontent.transform;
                 chair.transform.localPosition = Vector3.zero;
-                chair.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                chair.transform.localEulerAngles = Vector3.zero;
                 configurator.SetActive(false);
                 EnableAllRenderers(false);
                // buttonAR.sprite = exitFullscreen;

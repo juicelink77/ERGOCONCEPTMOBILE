@@ -30,15 +30,18 @@ public class AccessorySetting : MonoBehaviour
                 SliderGroup.SetActive(true);
                 SliderGroup.transform.Find("Label").GetComponent<Text>().text = settingName;
                 Slider = SliderGroup.transform.Find("Slider").GetComponent<Slider>();
+                Slider.minValue = float.Parse(values[0].ToString());
+                Slider.maxValue = float.Parse(values[1].ToString());
             }
             else
             {
                 CranGroupe.SetActive(true);
                 CranGroupe.transform.Find("Label").GetComponent<Text>().text = settingName;
                 Slider = CranGroupe.transform.Find("Slider").GetComponent<Slider>();
+                Slider.minValue = int.Parse(values[0].ToString());
+                Slider.maxValue = int.Parse(values[1].ToString());
             }
-            Slider.minValue = int.Parse(values[0].ToString());
-            Slider.maxValue = int.Parse(values[1].ToString());
+            
             float multiplicateur = 1f;
             if(values.Count > 2)
             {
