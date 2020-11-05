@@ -39,7 +39,7 @@ public class SettingsManager : MonoBehaviour
     public GameObject CategoryNamePrefab;
     public Transform AccessoryContener;
     public Transform ModelContener;
-    public Button FoldButton;
+    public Button[] FoldButtons;
 
     private Hashtable packs;
     private int packIndex = 0;
@@ -90,7 +90,11 @@ public class SettingsManager : MonoBehaviour
         model3D = Instantiate(targetFile, ModelContener);
         model3D.layer = 8;
         //////FOLD BUTTON
-        FoldButton.onClick.AddListener(FoldChair);
+        foreach(Button bt in FoldButtons)
+        {
+            bt.onClick.AddListener(FoldChair);
+
+        }
         //////SET CHAIR IN VIEW SWITCHER ////
         Scene scene = SceneManager.GetActiveScene();
         if(scene.name == "DisplayModel_Mobile")

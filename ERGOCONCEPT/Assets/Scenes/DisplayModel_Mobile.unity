@@ -853,7 +853,8 @@ MonoBehaviour:
     type: 3}
   AccessoryContener: {fileID: 1443587993}
   ModelContener: {fileID: 1573567742}
-  FoldButton: {fileID: 886927239}
+  FoldButtons:
+  - {fileID: 886927239}
   AccessorySelected: []
 --- !u!1 &420425353
 GameObject:

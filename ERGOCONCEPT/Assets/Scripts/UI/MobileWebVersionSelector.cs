@@ -1,16 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class MobileWebVersionSelector : MonoBehaviour
 {
-    public GameObject WebVersion;
-    public GameObject MobileVersion;
+    public UnityEvent OnWebOnMobile;
+    public UnityEvent OnWebOnComputer;
+    public UnityEvent OnMobile;
+
+    public bool SimulateWebGL = false;
+    public bool SimulateMobile = false;
 
     private void OnEnable()
     {
-        bool isMobile = Application.isMobilePlatform;
-        WebVersion.SetActive(!isMobile);
-        MobileVersion.SetActive(isMobile);
+        if (IsMobile() && IsWebGL())
+        {
+            OnWebOnMobile.Invoke();
+        }
+        else if (IsMobile() && !IsWebGL())
+        {
+            OnMobile.Invoke();
+        }
+        else
+        {
+            OnWebOnComputer.Invoke();
+        }
+    }
+
+    private bool IsMobile()
+    {
+        if (SimulateMobile)
+            return true;
+
+        return Application.isMobilePlatform;
+    }
+
+    private bool IsWebGL()
+    {
+        if (SimulateWebGL)
+            return true;
+#if !UNITY_EDITOR && UNITY_WEBGL
+         return true;
+#endif
+        return false;
     }
 }
