@@ -28,7 +28,7 @@ public class QuotePopup : MonoBehaviour
 
     private void OnEnable()
     {
-        model3D.rotation = Quaternion.Euler(0, 60, 0);
+        model3D.rotation = Quaternion.Euler(0, 25, 0);
         PriceTTC.text = SettingsManager.GetPriceTTC();
         PriceSecu.text = SettingsManager.GetPriceLPP();
         ChairName.text = "Votre " + SettingsManager.ChairName.text;

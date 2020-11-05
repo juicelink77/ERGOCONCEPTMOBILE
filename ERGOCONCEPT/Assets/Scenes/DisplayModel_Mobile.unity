@@ -5046,7 +5046,7 @@ PrefabInstance:
         type: 3}
       propertyPath: model3D
       value: 
-      objectReference: {fileID: 1573567742}
+      objectReference: {fileID: 1430477711}
     - target: {fileID: 8576004888603317559, guid: 07739b62358427943833c3c7b29100d1,
         type: 3}
       propertyPath: m_AnchorMin.y
