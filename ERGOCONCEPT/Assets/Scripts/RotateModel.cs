@@ -37,7 +37,7 @@ public class RotateModel : MonoBehaviour
             if (canRotate && ImageClicked)
             {
                 float rotationY = (Input.GetAxis("Mouse X") * RotationSpeed);
-                Model.transform.Rotate(0, -rotationY, 0, Space.World);
+                Model.transform.Rotate(0, rotationY, 0, Space.World);
             }
             else
             {

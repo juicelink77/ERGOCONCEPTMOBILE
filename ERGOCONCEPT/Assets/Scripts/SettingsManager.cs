@@ -39,6 +39,7 @@ public class SettingsManager : MonoBehaviour
     public GameObject CategoryNamePrefab;
     public Transform AccessoryContener;
     public Transform ModelContener;
+    public Button FoldButton;
 
     private Hashtable packs;
     private int packIndex = 0;
@@ -88,6 +89,8 @@ public class SettingsManager : MonoBehaviour
         GameObject targetFile = Resources.Load("Prefabs/Chairs/" + currentReference) as GameObject;
         model3D = Instantiate(targetFile, ModelContener);
         model3D.layer = 8;
+        //////FOLD BUTTON
+        FoldButton.onClick.AddListener(FoldChair);
         //////SET CHAIR IN VIEW SWITCHER ////
         Scene scene = SceneManager.GetActiveScene();
         if(scene.name == "DisplayModel_Mobile")
@@ -99,6 +102,12 @@ public class SettingsManager : MonoBehaviour
         DisplayPriceHT();
         DisplayPriceTTC();
         DisplayWeight();
+    }
+
+    private void FoldChair()
+    {
+        Animator animator = model3D.GetComponentInChildren<Animator>();
+        animator.Play("pliage");
     }
 
     private void DisplayPriceHT()

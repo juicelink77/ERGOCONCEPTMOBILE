@@ -11,9 +11,7 @@ public class Accessory : MonoBehaviour
     public string Reference;
     public bool IsOn;
     public GameObject ObjectModel3D;
-    private Vector3 pos;
-    private Vector3 rot;
-    private Slider currentSlider;
+
     private void Start()
     {
         ObjectModel3D = GameObject.Find(Reference);

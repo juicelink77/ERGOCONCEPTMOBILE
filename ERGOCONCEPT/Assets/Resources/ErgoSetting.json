@@ -889,8 +889,8 @@
               "Type": "Slider",
               "axe" : "x",
               "Values": [
-                0,
-                25
+                -25,
+                0
               ]
             },
             "Hauteur": {

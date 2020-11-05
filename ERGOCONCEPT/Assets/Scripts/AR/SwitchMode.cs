@@ -14,6 +14,7 @@ public class SwitchMode : MonoBehaviour
     public Sprite fullscreen;
     public Sprite exitFullscreen;
     private GameObject chair = null;
+    private GameObject chairCopy = null;
     public void OnClick()
     {
 
@@ -22,9 +23,7 @@ public class SwitchMode : MonoBehaviour
             if (configurator.activeSelf)
             {
                 ARcontent.SetActive(true);
-                chair.transform.parent = chairContainerARcontent.transform;
-                chair.transform.localPosition = Vector3.zero;
-                chair.transform.localEulerAngles = Vector3.zero;
+                chairCopy = Instantiate(chair, chairContainerARcontent.transform);
                 configurator.SetActive(false);
                 EnableAllRenderers(false);
                // buttonAR.sprite = exitFullscreen;
@@ -32,9 +31,10 @@ public class SwitchMode : MonoBehaviour
             else
             {
 
-                chair.transform.parent = chairContainerConfigurator.transform;
-                chair.transform.localPosition = Vector3.zero;
-                chair.transform.localEulerAngles = Vector3.zero;
+                if(chairCopy != null)
+                {
+                    Destroy(chairCopy);
+                }
                 ARcontent.SetActive(false);
                 configurator.SetActive(true);
                 EnableAllRenderers(true);
