@@ -18,6 +18,7 @@ public class QuotePopup : MonoBehaviour
     public SettingsManager SettingsManager;
     public UnityEvent OnSendEmailSuccess;
     public Transform model3D;
+    public float modelRotation;
 
     public const string MatchEmailPattern =
         @"^(([\w-]+\.)+[\w-]+|([a-zA-Z]{1}|[\w-]{2,}))@"
@@ -28,7 +29,7 @@ public class QuotePopup : MonoBehaviour
 
     private void OnEnable()
     {
-        model3D.rotation = Quaternion.Euler(0, 25, 0);
+        model3D.localEulerAngles = new Vector3(0, modelRotation, 0);
         PriceTTC.text = SettingsManager.GetPriceTTC();
         PriceSecu.text = SettingsManager.GetPriceLPP();
         ChairName.text = "Votre " + SettingsManager.ChairName.text;

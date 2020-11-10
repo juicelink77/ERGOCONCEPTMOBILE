@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Threading.Tasks;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class SwitchMode : MonoBehaviour
     public Sprite exitFullscreen;
     private GameObject chair = null;
     private GameObject chairCopy = null;
-    public void OnClick()
+    public async void OnClick()
     {
 
         if (chair != null) 
@@ -26,7 +27,8 @@ public class SwitchMode : MonoBehaviour
                 chairCopy = Instantiate(chair, chairContainerARcontent.transform);
                 configurator.SetActive(false);
                 EnableAllRenderers(false);
-               // buttonAR.sprite = exitFullscreen;
+                GameObject videoBackground = await disableShadowOnVideoBackground();
+                videoBackground.GetComponent<Renderer>().receiveShadows = false;
             }
             else
             {
@@ -41,6 +43,14 @@ public class SwitchMode : MonoBehaviour
                // buttonAR.sprite = fullscreen;
             }
         }
+    }
+    private async Task<GameObject> disableShadowOnVideoBackground()
+    {
+        while (!GameObject.Find("BackgroundPlane"))
+        {
+            await Task.Delay(1000 / 30);
+        }
+        return GameObject.Find("BackgroundPlane");
     }
     public void SetChair(GameObject ob)
     {

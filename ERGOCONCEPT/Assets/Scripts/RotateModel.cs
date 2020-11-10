@@ -6,11 +6,12 @@ public class RotateModel : MonoBehaviour
     public RawImage Image;
     public GameObject Model;
     public Camera CameraUI;
-    public float RotationSpeed = 5;
+    public float RotationSpeedX = 800;
+    public float RotationSpeedY = 500;
     public int DistanceToMakeToRotate = 20;
     private bool canRotate = false;
     private bool ImageClicked = false;
-    private float mousePositionX = 0.0f;
+    private Vector2 mousePosition;
 
     private void Update()
     {
@@ -23,7 +24,8 @@ public class RotateModel : MonoBehaviour
                 if (hit.collider.gameObject == Image.gameObject)
                 {
                     ImageClicked = true;
-                    mousePositionX = Input.mousePosition.x;
+                    mousePosition = Input.mousePosition;
+
                 }
             }
         }
@@ -36,15 +38,35 @@ public class RotateModel : MonoBehaviour
         {
             if (canRotate && ImageClicked)
             {
-                float rotationY = (Input.GetAxis("Mouse X") * RotationSpeed);
-                Model.transform.Rotate(0, rotationY, 0, Space.World);
+                RotateMe();
             }
             else
             {
-                Vector3 mp = Input.mousePosition;
-                float distance = Mathf.Abs(mousePositionX - mp.x);
-                canRotate = distance > DistanceToMakeToRotate;
+
+               float dist = Vector2.Distance(mousePosition, Input.mousePosition);
+                if (dist > DistanceToMakeToRotate)
+                {
+                    canRotate = true;
+                }
             }
         }
+    }
+    float ClampAngle(float angle, float from, float to)
+    {
+        if (angle < 0f) angle = 360 + angle;
+        if (angle > 180f) return Mathf.Max(angle, 360 + from);
+        return Mathf.Min(angle, to);
+    }
+
+
+    private void RotateMe()
+    {
+        float mx = Input.GetAxis("Mouse X") * Time.deltaTime * RotationSpeedX;
+        float my = Input.GetAxis("Mouse Y") * Time.deltaTime * RotationSpeedY;
+
+        Vector3 rot = Model.transform.rotation.eulerAngles + new Vector3(0f, mx, my);
+        rot.x = ClampAngle(rot.x, -60f, 60f);
+        rot.z = ClampAngle(rot.z, -70f, 9f);
+        Model.transform.eulerAngles = rot;
     }
 }
