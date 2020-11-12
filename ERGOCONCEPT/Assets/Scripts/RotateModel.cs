@@ -12,7 +12,7 @@ public class RotateModel : MonoBehaviour
     private bool canRotate = false;
     private bool ImageClicked = false;
     private Vector2 mousePosition;
-
+    public bool locked;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -36,7 +36,7 @@ public class RotateModel : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            if (canRotate && ImageClicked)
+            if (canRotate && ImageClicked && !locked)
             {
                 RotateMe();
             }
