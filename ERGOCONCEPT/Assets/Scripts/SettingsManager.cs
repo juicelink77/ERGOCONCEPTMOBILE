@@ -57,6 +57,7 @@ public class SettingsManager : MonoBehaviour
     private List<Accessory> AccessorySeriesList;
     public List<Accessory> AccessorySelected = new List<Accessory>();
 
+    private bool plier = false;
     public enum SettingTypes
     {
         Toggle,
@@ -110,8 +111,21 @@ public class SettingsManager : MonoBehaviour
 
     private void FoldChair()
     {
-        Animator animator = model3D.GetComponentInChildren<Animator>();
-        animator.Play("pliage");
+        Animator animator = GameObject.Find("bloc_fauteuil").GetComponentInChildren<Animator>();
+        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
+        {
+            return;
+        }
+        if (!plier)
+        {
+            animator.Play("pliage");
+            plier = true;
+        }
+        else
+        {
+            animator.Play("depliage");
+            plier = false;
+        }
     }
 
     private void DisplayPriceHT()

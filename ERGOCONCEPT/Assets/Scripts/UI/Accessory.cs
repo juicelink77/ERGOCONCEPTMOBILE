@@ -58,66 +58,67 @@ public class Accessory : MonoBehaviour
         float v = (float)(slider.value * multiplicateur);
         string vector = axe;
         GameObject ob = GameObject.Find(Reference+"_"+ parameterTypes);
+        if(ob != null) { 
         StoreTransform initialTransform = ob.GetComponent<StoreTransform>();
-        switch (parameterTypes)
-        {
-            case "Inclinaison":
-                switch (vector)
-                {
-                    case "x":
-                        ob.transform.localEulerAngles = new Vector3(initialTransform.initialRot.x + v, ob.transform.localEulerAngles.y, ob.transform.localEulerAngles.z);
-                        break;
-                    case "y":
-                        ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, initialTransform.initialRot.y + v, ob.transform.localEulerAngles.z);
-                        break;
-                    case "z":
-                        ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, ob.transform.localEulerAngles.y, initialTransform.initialRot.z + v);
-                        break;
-                }
-                break;
-            case "Hauteur":
-                switch (vector)
-                {
-                    case "x":
-                        ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
-                        break;
-                    case "y":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
-                        break;
-                    case "z":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
-                        break;
-                }
-                break;
-            case "Profondeur":
-                switch (vector)
-                {
-                    case "x":
-                        ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
-                        break;
-                    case "y":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
-                        break;
-                    case "z":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
-                        break;
-                }
-                break;
-            case "Emplacement":
-                switch (vector)
-                {
-                    case "x":
-                        ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
-                        break;
-                    case "y":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
-                        break;
-                    case "z":
-                        ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
-                        break;
-                }
-                break;
-
+            switch (parameterTypes)
+            {
+                case "Inclinaison":
+                    switch (vector)
+                    {
+                        case "x":
+                            ob.transform.localEulerAngles = new Vector3(initialTransform.initialRot.x + v, ob.transform.localEulerAngles.y, ob.transform.localEulerAngles.z);
+                            break;
+                        case "y":
+                            ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, initialTransform.initialRot.y + v, ob.transform.localEulerAngles.z);
+                            break;
+                        case "z":
+                            ob.transform.localEulerAngles = new Vector3(ob.transform.localEulerAngles.x, ob.transform.localEulerAngles.y, initialTransform.initialRot.z + v);
+                            break;
+                    }
+                    break;
+                case "Hauteur":
+                    switch (vector)
+                    {
+                        case "x":
+                            ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
+                            break;
+                        case "y":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
+                            break;
+                        case "z":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
+                            break;
+                    }
+                    break;
+                case "Profondeur":
+                    switch (vector)
+                    {
+                        case "x":
+                            ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
+                            break;
+                        case "y":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
+                            break;
+                        case "z":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
+                            break;
+                    }
+                    break;
+                case "Emplacement":
+                    switch (vector)
+                    {
+                        case "x":
+                            ob.transform.localPosition = new Vector3(initialTransform.initialPos.x + v, ob.transform.localPosition.y, ob.transform.localPosition.z);
+                            break;
+                        case "y":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, initialTransform.initialPos.y + v, ob.transform.localPosition.z);
+                            break;
+                        case "z":
+                            ob.transform.localPosition = new Vector3(ob.transform.localPosition.x, ob.transform.localPosition.y, initialTransform.initialPos.z + v);
+                            break;
+                    }
+                    break;
+            }
         }
     }
 }
