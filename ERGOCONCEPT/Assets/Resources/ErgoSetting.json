@@ -50,16 +50,18 @@
           "Settings": {
             "Inclinaison": {
               "Type": "Slider",
+              "axe": "x",
               "Values": [
                 0,
-                40
+                15
               ]
             },
             "Hauteur": {
-              "Type": "Cran",
+              "Type": "Slider",
+              "axe": "y",
               "Values": [
                 0,
-                4
+                0.05
               ],
               "delta": 10
             }

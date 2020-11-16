@@ -4,6 +4,7 @@ using System.Collections;
 [ExecuteInEditMode()]
 public class PlanarRealtimeReflection : MonoBehaviour
 {
+	public Camera cam;
 	public bool m_DisablePixelLights = true;
 	public int m_TextureResolution = 1024;
 	public float m_clipPlaneOffset = 0.07f;
@@ -31,7 +32,7 @@ public class PlanarRealtimeReflection : MonoBehaviour
 		if(!enabled || !GetComponent<Renderer>() || !GetComponent<Renderer>().sharedMaterial || !GetComponent<Renderer>().enabled)
 			return;
 		
-		Camera cam = Camera.current;
+		//Camera cam = Camera.current;
 		if(!cam)
 			return;
 		
@@ -87,6 +88,7 @@ public class PlanarRealtimeReflection : MonoBehaviour
 		GL.invertCulling =  (true);
 		reflectionCamera.transform.position = newpos;
 		Vector3 euler = cam.transform.eulerAngles;
+		//Debug.Log(reflectionCamera.fieldOfView);
 		reflectionCamera.transform.eulerAngles = new Vector3(0, euler.y, euler.z);
 		reflectionCamera.Render();
 		reflectionCamera.transform.position = oldpos;

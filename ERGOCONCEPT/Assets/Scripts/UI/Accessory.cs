@@ -55,6 +55,7 @@ public class Accessory : MonoBehaviour
     }
     public virtual void ChangeValue(Slider slider, string parameterTypes, float multiplicateur, string axe)
     {
+        Debug.Log(Reference + "_" + parameterTypes);
         float v = (float)(slider.value * multiplicateur);
         string vector = axe;
         GameObject ob = GameObject.Find(Reference+"_"+ parameterTypes);
