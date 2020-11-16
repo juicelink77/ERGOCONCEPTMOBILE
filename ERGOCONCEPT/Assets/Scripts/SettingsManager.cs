@@ -58,6 +58,8 @@ public class SettingsManager : MonoBehaviour
     public List<Accessory> AccessorySelected = new List<Accessory>();
 
     private bool plier = false;
+    private DisplayAccessoryByRef[] DisplayAccessoryByRef;
+
     public enum SettingTypes
     {
         Toggle,
@@ -107,6 +109,8 @@ public class SettingsManager : MonoBehaviour
         DisplayPriceHT();
         DisplayPriceTTC();
         DisplayWeight();
+
+        DisplayAccessoryByRef = FindObjectsOfType<DisplayAccessoryByRef>();
     }
 
     private void FoldChair()
@@ -341,8 +345,17 @@ public class SettingsManager : MonoBehaviour
         }
         TitleItems.GetComponent<ItemsBarDisplay>().Init(true, AccessoryToggleList, "Accessoires", categoryNameList);
     }
+
+
     public string EditSelectedAccessoryList(string refe, bool remove)
     {
+
+        foreach (DisplayAccessoryByRef d in DisplayAccessoryByRef)
+        {
+            if (d.Reference == refe)
+                d.DisplayAccessory(!remove);
+        }
+
         foreach (AccessoryToggle accessory in AccessorySelected)
         {
             if (refe == accessory.Reference)
