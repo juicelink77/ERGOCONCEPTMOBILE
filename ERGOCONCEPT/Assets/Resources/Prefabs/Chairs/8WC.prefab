@@ -8875,6 +8875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672554931431676911}
   - component: {fileID: 6322271403192524792}
+  - component: {fileID: 8160566914458244056}
   m_Layer: 8
   m_Name: 7E10_Emplacement
   m_TagString: Untagged
@@ -8911,6 +8912,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialPos: {x: 0, y: 0, z: 0}
   initialRot: {x: 0, y: 0, z: 0}
+--- !u!114 &8160566914458244056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955921016009468060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ea701026d91df48b6178e6f20d327e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reference: 7E10
+  Accessory: {fileID: 5708637203883369561}
+  SerieAccessories: []
 --- !u!1 &1960566636804588925
 GameObject:
   m_ObjectHideFlags: 0
@@ -36896,8 +36912,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2894238734809729768}
   - component: {fileID: 9051948006604347234}
+  - component: {fileID: 7711379231312138309}
   m_Layer: 8
-  m_Name: 8M06
+  m_Name: 8M06_Profondeur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36934,6 +36951,20 @@ MonoBehaviour:
   Accessory: {fileID: 374548792187547726}
   SerieAccessories:
   - {fileID: 6426134855124161855}
+--- !u!114 &7711379231312138309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488944410829684728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e9e9366205dad4fa2be4ca89d438eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPos: {x: 0, y: 0, z: 0}
+  initialRot: {x: 0, y: 0, z: 0}
 --- !u!1 &8494197617440591829
 GameObject:
   m_ObjectHideFlags: 0

@@ -207,7 +207,16 @@
           "Ref": "8M06",
           "Category": "Repose-pieds",
           "Name": "Repose-pieds Monobloc",
-          "Settings": {},
+          "Settings": {
+            "Profondeur": {
+              "Type": "Slider",
+              "axe": "z",
+              "Values": [
+                0,
+                0.13
+              ]
+            }
+          },
           "PriceHT": 132.7,
           "TVA": 5.5,
           "PriceTTC": "140",
@@ -499,15 +508,15 @@
           "Ref": "7E10",
           "Name": "Commande tierce personne",
           "Settings": {
-              "Emplacement": {
-                  "Type": "Cran",
-                  "axe": "x",
-                  "Values": [
-                    0,
-                    1,
-                    0.2
-                  ]
-                }
+            "Emplacement": {
+              "Type": "Cran",
+              "axe": "x",
+              "Values": [
+                0,
+                1,
+                0.2
+              ]
+            }
           },
           "PriceHT": 677.02,
           "TVA": 5.5,
@@ -820,7 +829,7 @@
           "Settings": {
             "Emplacement": {
               "Type": "Cran",
-              "axe":"y",
+              "axe": "y",
               "Values": [
                 0,
                 1,
@@ -829,7 +838,7 @@
             },
             "Profondeur": {
               "Type": "Cran",
-              "axe":"z",
+              "axe": "z",
               "Values": [
                 0,
                 3,
@@ -861,7 +870,7 @@
           "Settings": {
             "Profondeur": {
               "Type": "Slider",
-              "axe" : "z",
+              "axe": "z",
               "Values": [
                 0,
                 0.13
@@ -869,7 +878,7 @@
             },
             "Hauteur": {
               "Type": "Cran",
-              "axe" : "z",
+              "axe": "z",
               "Values": [
                 0,
                 3,
@@ -899,7 +908,7 @@
           "Settings": {
             "Inclinaison": {
               "Type": "Slider",
-              "axe" : "-x",
+              "axe": "-x",
               "Values": [
                 0,
                 25
@@ -907,7 +916,7 @@
             },
             "Hauteur": {
               "Type": "Slider",
-              "axe" : "y",
+              "axe": "y",
               "Values": [
                 0,
                 0.04
