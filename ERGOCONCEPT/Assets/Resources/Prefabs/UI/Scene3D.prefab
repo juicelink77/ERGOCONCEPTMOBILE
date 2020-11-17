@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612e435dfb56de24f98d51623fbc63e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 7098256999102887696}
   m_DisablePixelLights: 1
   m_TextureResolution: 1024
   m_clipPlaneOffset: 0.01

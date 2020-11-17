@@ -498,7 +498,17 @@
           "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "Ref": "7E10",
           "Name": "Commande tierce personne",
-          "Settings": {},
+          "Settings": {
+              "Emplacement": {
+                  "Type": "Cran",
+                  "axe": "x",
+                  "Values": [
+                    0,
+                    1,
+                    0.2
+                  ]
+                }
+          },
           "PriceHT": 677.02,
           "TVA": 5.5,
           "PriceTTC": 714.26,
@@ -889,10 +899,10 @@
           "Settings": {
             "Inclinaison": {
               "Type": "Slider",
-              "axe" : "x",
+              "axe" : "-x",
               "Values": [
-                -25,
-                0
+                0,
+                25
               ]
             },
             "Hauteur": {
@@ -914,31 +924,14 @@
       "List": [
         {
           "Category": "Confort",
-          "Ref": "8WCAccoudoirsD",
-          "Name": "Accoudoir Droit",
+          "Ref": "8WCAccoudoirs",
+          "Name": "Accoudoirs",
           "Settings": {
             "Largeur": {
-              "Type": "Slider",
+              "Type": "Cran",
               "Values": [
                 0,
-                40
-              ]
-            }
-          },
-          "ChairsReferences8": [
-            "8WC"
-          ]
-        },
-        {
-          "Category": "Confort",
-          "Ref": "8WCAccoudoirsG",
-          "Name": "Accoudoir Gauche",
-          "Settings": {
-            "Largeur": {
-              "Type": "Slider",
-              "Values": [
-                0,
-                40
+                1
               ]
             }
           },
