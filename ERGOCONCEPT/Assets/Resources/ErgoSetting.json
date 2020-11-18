@@ -298,7 +298,7 @@
           "PriceTTC": "48",
           "LPP": "0",
           "Weight": "5",
-          "Exeptions": [],
+          "Exeptions": ["7M10"],
           "Category": "Roues Avant"
         }
       ]
@@ -316,7 +316,7 @@
           "LPP": "0",
           "Weight": "5",
           "Category": "Roues Avant",
-          "Exeptions": []
+          "Exeptions": ["7M09"]
         }
       ]
     },
