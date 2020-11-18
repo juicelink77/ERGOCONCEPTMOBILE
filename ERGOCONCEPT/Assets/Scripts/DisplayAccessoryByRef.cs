@@ -8,6 +8,8 @@ public class DisplayAccessoryByRef : MonoBehaviour
     public GameObject Accessory;
     public List<GameObject> SerieAccessories;
 
+    public bool IsDisplay = false;
+
     public void Awake()
     {
         DisplayAccessory(false);
@@ -15,10 +17,17 @@ public class DisplayAccessoryByRef : MonoBehaviour
 
     public void DisplayAccessory(bool value)
     {
-        if(Accessory != null)
+        IsDisplay = value;
+
+        if (Accessory != null)
             Accessory.SetActive(value);
 
         foreach(GameObject g in SerieAccessories)
             g.SetActive(!value);
+    }
+
+    public void RefreshAccessory(bool isDisplay)
+    {
+        DisplayAccessory(isDisplay);
     }
 }

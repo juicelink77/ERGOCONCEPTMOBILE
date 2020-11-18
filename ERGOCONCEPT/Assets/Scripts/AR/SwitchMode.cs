@@ -25,6 +25,21 @@ public class SwitchMode : MonoBehaviour
             {
                 ARcontent.SetActive(true);
                 chairCopy = Instantiate(chair, chairContainerARcontent.transform);
+
+                DisplayAccessoryByRef[] ListOrigin = chair.GetComponentsInChildren<DisplayAccessoryByRef>();
+                DisplayAccessoryByRef[] ListClone = chairCopy.GetComponentsInChildren<DisplayAccessoryByRef>();
+
+                foreach(DisplayAccessoryByRef displayAccessoryOrigin in ListOrigin)
+                {
+                    foreach (DisplayAccessoryByRef displayAccessoryClone in ListClone)
+                    {
+                        if(displayAccessoryOrigin.Reference == displayAccessoryClone.Reference)
+                        {
+                            displayAccessoryClone.RefreshAccessory(displayAccessoryOrigin.IsDisplay);
+                        }
+                    }
+                }
+
                 configurator.SetActive(false);
                 EnableAllRenderers(false);
                 GameObject videoBackground = await disableShadowOnVideoBackground();
