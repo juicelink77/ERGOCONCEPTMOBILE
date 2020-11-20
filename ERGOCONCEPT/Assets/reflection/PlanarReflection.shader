@@ -7,13 +7,13 @@ Shader "ALIyerEdon/Mobile/PlanarReflection"
 		_MainAlpha("MainAlpha", Range(0, 1)) = 1
 		_ReflectionAlpha("ReflectionAlpha", Range(0, 1)) = 1
 		_MainTex ("MainTex (RGBA)", 2D) = ""
-		[HideInInspector]_ReflectionTex ("ReflectionTex", 2D) = "white" { TexGen ObjectLinear }
+		[HideInInspector]_ReflectionTex ("ReflectionTex", 2D) = "white" {}
 	}
 
 
 	Subshader
 	{
-
+		
 		CGPROGRAM
 		#pragma surface surf Lambert
 
@@ -22,7 +22,7 @@ Shader "ALIyerEdon/Mobile/PlanarReflection"
 		sampler2D _MainTex;
 		sampler2D _ReflectionTex;
 		half3 _Color;
-
+		
 		struct Input
 		{
 			float2 uv_MainTex;
