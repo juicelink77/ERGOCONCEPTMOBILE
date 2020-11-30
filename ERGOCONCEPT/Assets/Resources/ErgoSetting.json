@@ -12,6 +12,7 @@
   "Packs": {
     "8WA": {
       "Ref": "8WA",
+      "Description": "Ergo 08 L est un fauteuil roulant électrique ultra POLYVALENT ! Léger, compact et doté de nombreux réglages (dossier, repose-pieds, accoudoirs, joystick…)",
       "Name": "ERGO-08 L POSITION",
       "PriceHT": 3843.6,
       "TVA": 5.5,
@@ -78,7 +79,7 @@
     "7T02": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Cette assise permet de relevé de 3 cm la hauteur d'assise.",
           "Ref": "7T02",
           "Category": "Confort",
           "Name": "Assise Réhaussée +3cm",
@@ -98,7 +99,7 @@
     "NRT04": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Grace à cet accessoire, l'utilisateur pourra adapté la longueur, la hauteur et la profondeur.",
           "Ref": "NRT04",
           "Settings": {
             "Inclinaison": {
@@ -142,7 +143,7 @@
     "7T10L": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Cet accessoire, composé d'une assise technique et d'un dossier, permet une multitude de réglage au niveau du maintien dorsal.",
           "Ref": "7T10L",
           "Name": "Assise Modulaire Evolutive",
           "Settings": {
@@ -298,7 +299,9 @@
           "PriceTTC": "48",
           "LPP": "0",
           "Weight": "5",
-          "Exeptions": ["7M10"],
+          "Exeptions": [
+            "7M10"
+          ],
           "Category": "Roues Avant"
         }
       ]
@@ -316,14 +319,16 @@
           "LPP": "0",
           "Weight": "5",
           "Category": "Roues Avant",
-          "Exeptions": ["7M09"]
+          "Exeptions": [
+            "7M09"
+          ]
         }
       ]
     },
     "8M04000": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Ce type d'accoudoir permet un réglage en profondeur et en hauteur.",
           "Category": "Accoudoirs",
           "Name": "Accoudoirs Position réglables (La paire)",
           "PriceHT": 341.23,
@@ -373,7 +378,7 @@
     "7M01G": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Ce type d'accoudoir en gel offre un confort d'appui inégalé.",
           "Ref": "7M01G",
           "Name": "Accoudoirs Gel (x2)",
           "Category": "Accoudoirs",
@@ -394,7 +399,7 @@
     "7M22": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "S’adapte parfaitement sur l’accoudoir du fauteuil, permettant de bien positionner l’avant-bras en position de repos dans la gouttière. Il est particulièrement indiqué dans le cas d’une hémiplégie..",
           "Ref": "7M22D",
           "Category": "Accoudoirs",
           "Name": "Accoudoir Gouttière (x1) Droit",
@@ -411,7 +416,7 @@
           ]
         },
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "S’adapte parfaitement sur l’accoudoir du fauteuil, permettant de bien positionner l’avant-bras en position de repos dans la gouttière. Il est particulièrement indiqué dans le cas d’une hémiplégie..",
           "Ref": "7M22G",
           "Category": "Accoudoirs",
           "Name": "Accoudoir Gouttière (x1) Gauche",
@@ -504,7 +509,7 @@
     "7E10": {
       "List": [
         {
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Description": "Cet accessoire permet à une tierce personne de piloter le fauteuil.",
           "Ref": "7E10",
           "Name": "Commande tierce personne",
           "Settings": {
